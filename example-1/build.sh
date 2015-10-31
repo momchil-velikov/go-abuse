@@ -1,7 +1,6 @@
 #! /bin/sh
 
-#GO=$HOME/src/go/src/cmd/go/go
-GO=go
+GO=${GO:-go}
 
 GOPATH=$(pwd)/p1 $GO install a
 GOPATH=$(pwd)/p2 $GO install a
